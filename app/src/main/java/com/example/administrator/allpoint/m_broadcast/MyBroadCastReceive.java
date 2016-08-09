@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.example.administrator.allpoint.R;
+import com.example.administrator.allpoint.utils.Tu;
 
 /**
  * Created by Administrator on 2016/8/8.
@@ -18,8 +19,10 @@ public class MyBroadCastReceive extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        NotificationManager manager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-        Notification notification = new Notification(R.mipmap.ic_launcher, "0808，我是01！", System.currentTimeMillis());
-        manager.notify(MY_RECEIVE, notification);
+        /**
+         * 首先我们监听一下网路的变化
+         */
+        Tu.show(context,"netwok is changed!");
+
     }
 }

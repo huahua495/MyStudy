@@ -1,5 +1,7 @@
 package com.example.administrator.allpoint.m_broadcast;
 
+import android.content.IntentFilter;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
@@ -21,7 +23,6 @@ public class BroadCastActivity extends AppCompatActivity {
     @InjectView(R.id.btn_send_broadcase)
     Button btnSendBroadcase;
 
-
     private MyBroadCastReceive receive;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,14 +36,20 @@ public class BroadCastActivity extends AppCompatActivity {
      * 注册广播
      */
     private void registerBroad() {
+        IntentFilter filter=new IntentFilter();
+        filter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
+        receive=new MyBroadCastReceive();
+     registerReceiver(receive,filter);
     }
 
     private void initView() {
         ButterKnife.inject(this);
     }
 
+
     @Override
-    protected void onResume() {
-        super.onResume();
+    protected void onDestroy() {
+        super.onDestroy();
+        unregisterReceiver(receive);
     }
 }
