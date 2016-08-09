@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <Button
+        android:id="@+id/btn_alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="透明度动画"/>
+
+    <Button
+        android:id="@+id/btn_rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="旋转动画"/>
+    <Button
+        android:id="@+id/btn_rotate_self"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="旋转自身"/>
+
+    <Button
+        android:id="@+id/btn_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="位移动画"
+        />
+    <Button
+        android:id="@+id/btn_scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="缩放动画"/>
+
+    <Button
+        android:id="@+id/btn_scale_self"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="缩放自身"/>
+
+    <Button
+        android:id="@+id/btn_animationset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动画合集"/>
+</LinearLayout>
