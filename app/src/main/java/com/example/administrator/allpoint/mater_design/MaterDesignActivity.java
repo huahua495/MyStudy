@@ -24,6 +24,10 @@ public class MaterDesignActivity extends AppCompatActivity implements View.OnCli
     Button btn_Login;
     @InjectView(R.id.btn_leftMenu)
     Button btn_leftMenu;
+    @InjectView(R.id.btn_toolbar)
+    Button btn_toolbar;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +44,7 @@ public class MaterDesignActivity extends AppCompatActivity implements View.OnCli
         btnEdittext.setOnClickListener(this);
         btn_Login.setOnClickListener(this);
         btn_leftMenu.setOnClickListener(this);
+        btn_toolbar.setOnClickListener(this);
     }
 
     @Override
@@ -53,6 +58,9 @@ public class MaterDesignActivity extends AppCompatActivity implements View.OnCli
                 break;
             case R.id.btn_leftMenu:
                 startActivity(new Intent(this,NavigationActivity.class));
+                break;
+            case R.id.btn_toolbar:
+                startActivity(new Intent(this,ToolBarActivity.class));
                 break;
         }
     }

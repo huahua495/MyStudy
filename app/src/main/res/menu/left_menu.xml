@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:checked="true"
+            android:icon="@drawable/icon_about"
+            android:title="主页" />
+        <item
+            android:id="@+id/theme"
+            android:icon="@drawable/icon_baby"
+            android:title="主题" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/icon_setting"
+            android:title="设置" />
+    </group>
+
+    <item android:title="二级菜单">
+        <menu>
+            <item
+                android:icon="@drawable/icon_recomend"
+                android:title="收藏" />
+            <item
+                android:icon="@drawable/icon_collection"
+                android:title="相册" />
+            <item
+                android:icon="@drawable/icon_wenda"
+                android:title="好友" />
+        </menu>
+    </item>
+
+
+</menu>

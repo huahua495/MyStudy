@@ -23,16 +23,18 @@
             </intent-filter>
         </activity>
 
-
-        <activity android:name=".mater_design.MaterDesignActivity" ></activity>
+        <activity android:name=".mater_design.MaterDesignActivity"></activity>
         <activity android:name=".mater_design.EdittextActivity"></activity>
-        <activity android:name=".mater_design.LoginActivity" android:theme="@style/AppTheme.Dark"></activity>
-
+        <activity
+            android:name=".mater_design.LoginActivity"
+            android:theme="@style/AppTheme.Dark"></activity>
+        <activity android:name=".mater_design.NavigationActivity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".mater_design.ToolBarActivity"></activity>
+        <activity android:name=".m_act.AnimationActivity"></activity>
 
 
         <service android:name=".m_service.MyService"></service>
 
-        <activity android:name=".m_act.AnimationActivity"></activity>
         <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
              App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
         <meta-data

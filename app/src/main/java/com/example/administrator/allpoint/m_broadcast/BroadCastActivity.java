@@ -1,7 +1,6 @@
 package com.example.administrator.allpoint.m_broadcast;
 
 import android.content.IntentFilter;
-import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;

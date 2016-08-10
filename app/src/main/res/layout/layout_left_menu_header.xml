@@ -2,9 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="180dp"
-    android:orientation="horizontal"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bg_menu_head">
 
+    <com.example.administrator.allpoint.customview.CircleImageView
+        android:id="@+id/iv_avator"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:border_width="1dp"
+        app:border_color="@color/white"
+        android:src="@drawable/icon_user_avator"/>
 
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="润田纯净水"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        />
 
 </LinearLayout>

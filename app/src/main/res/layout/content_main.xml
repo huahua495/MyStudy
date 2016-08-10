@@ -9,31 +9,53 @@
     tools:showIn="@layout/activity_main">
 
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none"
-        >
+        android:scrollbars="none">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <Button
+                android:id="@+id/btn_service"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Service" />
+
+            <Button
+                style="@style/button_style"
+                android:id="@+id/btn_broadCast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BroadCastReceive" />
+
+            <Button
+                android:id="@+id/btn_contentProvider"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ContentProvider" />
+
 
             <Button
                 android:id="@+id/btn_mater_design"
+                style="@style/button_style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:text="Material Design"
-                />
+                android:text="Material Design" />
+
             <Button
                 android:id="@+id/btn_view_animation"
+                style="@style/button_style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="View Animation"
-                />
+                android:text="View Animation" />
+
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

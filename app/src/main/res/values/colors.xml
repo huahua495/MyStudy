@@ -14,4 +14,10 @@
     <color name="base">#AAAAAA</color>
     <color name="iron">#CCCCCC</color>
     <color name="white">#FFFFFF</color>
+
+
+    <color name="bg_menu_head">#009688</color>
+
+    <color name="bg_left_menu">#78909c</color>
+    <color name="bg_toolbar">#00bfa5</color>
 </resources>
