@@ -1,11 +1,13 @@
 <resources>
 
     <style name="AppTheme.NoActionBar">
-            <item name="windowActionBar">false</item>
-            <item name="windowNoTitle">true</item>
-            <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-            <item name="android:statusBarColor">@android:color/transparent</item>
-        </style>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="actionBarStyle">@style/JDActionBarStyle</item>
+        <item name="drawerArrowStyle">@style/AppTheme.JDDrawerArrowStyle</item>
+    </style>
 
     <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
@@ -22,5 +24,11 @@
         <item name="colorButtonNormal">@color/primary_darker</item>
 
         <item name="android:colorButtonNormal">@color/primary_dark</item>
+    </style>
+
+    <!--这里的样式主要是为了修改侧滑菜单主menu的旋转效果-->
+    <style name="displyHome" parent="AppTheme.NoActionBar">
+        <item name="actionBarStyle">@style/JDActionBarStyle</item>
+        <item name="drawerArrowStyle">@style/AppTheme.JDDrawerArrowStyle</item>
     </style>
 </resources>

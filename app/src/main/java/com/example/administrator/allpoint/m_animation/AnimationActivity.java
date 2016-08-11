@@ -1,4 +1,4 @@
-package com.example.administrator.allpoint.m_act;
+package com.example.administrator.allpoint.m_animation;
 
 import android.animation.ObjectAnimator;
 import android.os.Bundle;

@@ -26,11 +26,14 @@
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="actionBarStyle">@style/JDActionBarStyle</item>
+        <item name="drawerArrowStyle">@style/AppTheme.JDDrawerArrowStyle</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 
 
     <!--这两句代码修改的是toolbar右侧 更多的三个点，样式显示-->
@@ -55,4 +58,27 @@
     <style name="ToolbarTextAppearanceSubTitle">14sp</style>
 
     <style name="ToolbarTextAppearanceTitle">16sp</style>
+
+
+    <!--这里的样式主要是为了修改侧滑菜单主menu的旋转效果-->
+    <style name="displyHome" parent="AppTheme">
+        <item name="actionBarStyle">@style/JDActionBarStyle</item>
+        <item name="drawerArrowStyle">@style/AppTheme.JDDrawerArrowStyle</item>
+    </style>
+    <!-- 设置标题栏样式 -->
+    <style name="JDActionBarStyle" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="titleTextStyle">@style/ActionBarTitleStyle</item>
+    </style>
+
+    <style name="AppTheme.JDDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <!--是否开启导航图标的旋转效果-->
+        <item name="spinBars">false</item>
+        <item name="color">@android:color/white</item>
+    </style>
+    <!-- 标题栏文字样式 -->
+    <style name="ActionBarTitleStyle" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
 </resources>

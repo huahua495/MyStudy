@@ -9,7 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.administrator.allpoint.m_act.AnimationActivity;
+import com.example.administrator.allpoint.m_animation.AnimationActivity;
 import com.example.administrator.allpoint.m_broadcast.BroadCastActivity;
 import com.example.administrator.allpoint.m_service.ServiceActivity;
 import com.example.administrator.allpoint.mater_design.MaterDesignActivity;

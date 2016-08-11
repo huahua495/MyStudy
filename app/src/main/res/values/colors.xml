@@ -20,4 +20,6 @@
 
     <color name="bg_left_menu">#78909c</color>
     <color name="bg_toolbar">#00bfa5</color>
+
+    <color name="an_red">#FF6B6B</color>
 </resources>
