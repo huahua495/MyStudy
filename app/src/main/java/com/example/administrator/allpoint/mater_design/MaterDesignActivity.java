@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.administrator.allpoint.R;
+import com.example.administrator.allpoint.mater_design.m_act_anim.ActAnimActivity;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -32,7 +33,8 @@ public class MaterDesignActivity extends AppCompatActivity implements View.OnCli
     Button btn_AppBarLayout;
     @InjectView(R.id.btn_AppBarLayout1)
     Button btn_AppBarLayout1;
-
+    @InjectView(R.id.btn_ActivityOptionsCompat)
+    Button btn_ActivityOptionsCompat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +55,7 @@ public class MaterDesignActivity extends AppCompatActivity implements View.OnCli
         btn_tabLayout.setOnClickListener(this);
         btn_AppBarLayout.setOnClickListener(this);
         btn_AppBarLayout1.setOnClickListener(this);
+        btn_ActivityOptionsCompat.setOnClickListener(this);
     }
 
     @Override
@@ -78,6 +81,9 @@ public class MaterDesignActivity extends AppCompatActivity implements View.OnCli
                 break;
             case R.id.btn_AppBarLayout1:
                 startActivity(new Intent(this,UserCentryActivity.class));
+                break;
+            case R.id.btn_ActivityOptionsCompat:
+                startActivity(new Intent(this, ActAnimActivity.class));
                 break;
         }
     }

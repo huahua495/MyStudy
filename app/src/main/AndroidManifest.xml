@@ -28,15 +28,27 @@
         <activity
             android:name=".mater_design.LoginActivity"
             android:theme="@style/AppTheme.Dark"></activity>
-        <activity android:name=".mater_design.NavigationActivity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".mater_design.NavigationActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".mater_design.ToolBarActivity"></activity>
         <activity android:name=".m_animation.AnimationActivity"></activity>
         <activity android:name=".mater_design.TabLayoutActivity"></activity>
 
-        <activity android:name=".mater_design.AppBarActivity" android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".mater_design.UserCentryActivity"  android:theme="@style/AppTheme.NoActionBar" ></activity>
+        <activity
+            android:name=".mater_design.AppBarActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".mater_design.UserCentryActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
 
 
+        <activity android:name=".mater_design.m_act_anim.ActAnimActivity"></activity>
+        <activity android:name=".mater_design.m_act_anim.ActAnimActivity1"></activity>
+
+
+        <activity android:name=".m_broadcast.BroadCastActivity"></activity>
+        <activity android:name=".m_service.ServiceActivity"></activity>
 
         <service android:name=".m_service.MyService"></service>
 
