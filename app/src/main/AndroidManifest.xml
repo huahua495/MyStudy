@@ -50,6 +50,8 @@
         <activity android:name=".mater_design.m_act_anim.ActAnimActivity"></activity>
         <activity android:name=".mater_design.m_act_anim.ActAnimActivity1"></activity>
 
+        <!--View的滑动-->
+        <activity android:name=".m_scroll.ViewScroll"></activity>
 
         <!--数据存储-->
         <activity android:name=".m_data_storage.DataStorageAct"></activity>

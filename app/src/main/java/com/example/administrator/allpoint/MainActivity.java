@@ -12,6 +12,7 @@ import android.widget.Button;
 import com.example.administrator.allpoint.m_animation.AnimationActivity;
 import com.example.administrator.allpoint.m_broadcast.BroadCastActivity;
 import com.example.administrator.allpoint.m_data_storage.DataStorageAct;
+import com.example.administrator.allpoint.m_scroll.ViewScroll;
 import com.example.administrator.allpoint.m_service.ServiceActivity;
 import com.example.administrator.allpoint.mater_design.MaterDesignActivity;
 
@@ -35,8 +36,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btnMaterDesign;
     @InjectView(R.id.btn_data_storage)
     Button btn_data_storage;
+    @InjectView(R.id.btn_view_event)
+    Button btn_view_event;
     @InjectView(R.id.fab)
     FloatingActionButton fab;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnService.setOnClickListener(this);
         btnBroadCast.setOnClickListener(this);
         btnContentProvider.setOnClickListener(this);
-
+        btn_view_event.setOnClickListener(this);
 
 
         btn_data_storage.setOnClickListener(this);
@@ -85,6 +89,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_view_animation:
                 startActivity(new Intent(this, AnimationActivity.class));
+                break;
+            case R.id.btn_view_event:
+                startActivity(new Intent(this, ViewScroll.class));
                 break;
             case R.id.btn_data_storage:
                 startActivity(new Intent(this, DataStorageAct.class));
