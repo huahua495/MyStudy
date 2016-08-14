@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/button_style"
+        android:text="文件存储"/>
+    <Button
+        android:id="@+id/btn_sqlite"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="数据库存储"/>
+    <Button
+        android:id="@+id/btn_sharedpre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SharedPrefercences存储"
+        style="@style/button_style"/>
+</LinearLayout>

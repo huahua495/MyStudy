@@ -5,6 +5,12 @@
 
     <!--发送通知的权限 -->
     <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+    <!--网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+    <!--添加数据读取，写入权限-->
+
+
 
     <application
         android:allowBackup="true"
@@ -23,6 +29,7 @@
             </intent-filter>
         </activity>
 
+        <!--material design 各种控件效果界面-->
         <activity android:name=".mater_design.MaterDesignActivity"></activity>
         <activity android:name=".mater_design.EdittextActivity"></activity>
         <activity
@@ -34,22 +41,27 @@
         <activity android:name=".mater_design.ToolBarActivity"></activity>
         <activity android:name=".m_animation.AnimationActivity"></activity>
         <activity android:name=".mater_design.TabLayoutActivity"></activity>
-
         <activity
             android:name=".mater_design.AppBarActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".mater_design.UserCentryActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-
-
         <activity android:name=".mater_design.m_act_anim.ActAnimActivity"></activity>
         <activity android:name=".mater_design.m_act_anim.ActAnimActivity1"></activity>
 
 
+        <!--数据存储-->
+        <activity android:name=".m_data_storage.DataStorageAct"></activity>
+        <activity android:name=".m_data_storage.FileStorage"></activity>
+        <activity android:name=".m_data_storage.SqliteActivity"></activity>
+
+        <!--广播-->
         <activity android:name=".m_broadcast.BroadCastActivity"></activity>
+        <!--服务-->
         <activity android:name=".m_service.ServiceActivity"></activity>
 
+        <!--注册的服务-->
         <service android:name=".m_service.MyService"></service>
 
         <!-- ATTENTION: This was auto-generated to add Google Play services to your project for

@@ -66,7 +66,7 @@ public class ServiceActivity extends AppCompatActivity implements View.OnClickLi
         switch (view.getId()) {
             case R.id.start:
                 Intent startIntent = new Intent(this, MyService.class);
-                startActivity(startIntent);
+                startService(startIntent);
                 break;
             case R.id.bind:
                 Intent intent = new Intent(this, MyService.class);
@@ -74,7 +74,7 @@ public class ServiceActivity extends AppCompatActivity implements View.OnClickLi
                 break;
             case R.id.stop:
                 Intent stopIntent = new Intent(this, MyService.class);
-                startActivity(stopIntent);
+                stopService(stopIntent);
                 break;
             case R.id.unbind:
                 unbindService(connection);

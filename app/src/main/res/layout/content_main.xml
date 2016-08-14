@@ -24,21 +24,21 @@
                 style="@style/button_style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Service" />
+                android:text="服务" />
 
             <Button
                 style="@style/button_style"
                 android:id="@+id/btn_broadCast"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="BroadCastReceive" />
+                android:text="广播" />
 
             <Button
                 android:id="@+id/btn_contentProvider"
                 style="@style/button_style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ContentProvider" />
+                android:text="内容提供者" />
 
 
             <Button
@@ -53,9 +53,14 @@
                 style="@style/button_style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="View Animation" />
+                android:text="View 动画" />
 
-
+            <Button
+                android:id="@+id/btn_data_storage"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="数据存储" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
